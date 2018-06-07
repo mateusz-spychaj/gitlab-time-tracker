@@ -43,7 +43,7 @@ class base {
                 proxy: this._proxy,
                 resolveWithFullResponse: true,
                 headers: {
-                    'PRIVATE-TOKEN': this.token
+                    'ACCESS-TOKEN': this.token
                 }
             }).then(response => {
                 if (this.config.get('_createDump')) this.setDump(response, key);
@@ -73,7 +73,7 @@ class base {
                 proxy: this._proxy,
                 resolveWithFullResponse: true,
                 headers: {
-                    'PRIVATE-TOKEN': this.token
+                    'ACCESS-TOKEN': this.token
                 }
             }).then(response => {
                 if (this.config.get('_createDump')) this.setDump(response, key);
