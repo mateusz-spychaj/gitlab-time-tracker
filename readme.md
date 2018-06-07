@@ -777,7 +777,7 @@ const Report = require('gitlab-time-tracker/src/models/report');
 // create a default config
 let config = new Config();
 
-// set required parameters
+// set required parameters - access_token after login user
 config.set('token', 'abcdefghijklmnopqrst');
 config.set('project', 'namespace/project');
 

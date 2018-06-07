@@ -33,7 +33,7 @@ class base {
         let key = base.createDumpKey(path, data);
         if (this.config.dump) return this.getDump(key);
 
-        data.private_token = this.token;
+        data.access_token = this.token;
 
         return new Promise((resolve, reject) => {
             request.post(`${this.url}${path}`, {
@@ -63,7 +63,7 @@ class base {
         let key = base.createDumpKey(path, page, perPage);
         if (this.config.dump) return this.getDump(key);
 
-        path += (path.includes('?') ? '&' : '?') + `private_token=${this.token}`;
+        path += (path.includes('?') ? '&' : '?') + `access_token=${this.token}`;
         path += `&page=${page}&per_page=${perPage}`;
 
         return new Promise((resolve, reject) => {
