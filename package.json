@@ -3,11 +3,11 @@
   "version": "1.7.4",
   "description": "A command line interface for GitLabs time tracking feature.",
   "bugs": {
-    "url": "https://github.com/kriskbx/gitlab-time-tracker/issues"
+    "url": "https://github.com/mateusz-spychaj/gitlab-time-tracker/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kriskbx/gitlab-time-tracker.git"
+    "url": "https://github.com/mateusz-spychaj/gitlab-time-tracker.git"
   },
   "main": "src/gtt.js",
   "scripts": {
